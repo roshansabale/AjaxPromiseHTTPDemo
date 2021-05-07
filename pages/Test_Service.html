@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ajax Services and Promises</title>
+    <style>
+        .body {
+            margin: auto;
+        }
+        
+        div {
+            border: 1px solid black;
+            background-color: bisque;
+            padding: 50px;
+            width: 80%;
+            font-size: xx-large;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="../js/HttpService.js"></script>
+    <h1>The Test Services Result</h1>
+    <div id="get_services"></div>
+    <div id="delete_services"></div>
+    <div id="post_services"></div>
+    <script>
+        const getElem = document.querySelector("#get_services");
+        const getURL = "http://127.0.0.1:3000/employee/2";
+        makePromiseCall("GET", getURL, true)
+            .then(responseText => {
+                getElem.textContent = "Get User Data: " + responseText;
+                console.log("Response" + responseText);
+            })
+            .catch(error => {
+                getElem.textContent = "Get Error Status : " + JSON.stringify(error);
+                console.log("Response" + error);
+            });
+
+        const postElem = document.querySelector("#post_services");
+        const postURL = "http://127.0.0.1:3000/employee";
+        const empData = {
+            "name": "Akshay",
+            "gender": "male",
+            "department": ["HR", "Finance", "Engineer"],
+            "salary": "40000",
+            "startDate": "30 April 2021",
+            "profileUrl": "../assets/profile-images/Ellipse 1.png"
+        };
+
+        let postData = null;
+        makePromiseCall("POST", postURL, true, empData)
+            .then(responseText => {
+                postElem.textContent = " POST User Data at: " + responseText;
+                postData = responseText;
+                console.log("Post Data:" + postData);
+                document.close();
+                window.close();
+            })
+            .catch(error => {
+                postElem.textContent = "POST Error Status:" + JSON.stringify(error);
+            });
+
+
+        const deleteElem = document.querySelector("#delete_services");
+        const deleteURL = "http://127.0.0.1:3000/employee/9";
+        makePromiseCall("DELETE", deleteURL, true)
+            .then(responseText => {
+                deleteElem.textContent = " Deleted User Data at: " + responseText;
+            })
+            .catch(error => {
+                deleteElem.textContent = "Deleted Error Status:" + JSON.stringify(error);
+            });
+    </script>
+
+</body>
+
+</html>

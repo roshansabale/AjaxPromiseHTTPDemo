@@ -1,0 +1,121 @@
+{
+  "employee": [
+    {
+      "name": "Roshan",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "45000",
+      "startDate": "29 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 2
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 3
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 4
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 5
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 6
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 7
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 8
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 10
+    },
+    {
+      "name": "Akshay",
+      "gender": "male",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "40000",
+      "startDate": "30 April 2021",
+      "profileUrl": "../assets/profile-images/Ellipse 1.png",
+      "id": 11
+    }
+  ]
+}
